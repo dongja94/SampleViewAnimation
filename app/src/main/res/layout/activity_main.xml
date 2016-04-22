@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.begentgroup.sampleviewanimation.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:id="@+id/btn_translate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:id="@+id/btn_scale"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_translate"
+            android:layout_toEndOf="@+id/btn_translate" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:id="@+id/btn_rotate"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_scale"
+            android:layout_toEndOf="@+id/btn_scale" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:id="@+id/btn_alpha"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_rotate"
+            android:layout_toEndOf="@+id/btn_rotate" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S1"
+            android:id="@+id/btn_set1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_alpha"
+            android:layout_toEndOf="@+id/btn_alpha" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LI"
+            android:id="@+id/btn_left_in"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_set1"
+            android:layout_toEndOf="@+id/btn_set1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LO"
+            android:id="@+id/btn_left_out"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_left_in"
+            android:layout_toEndOf="@+id/btn_left_in" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CU"
+            android:id="@+id/btn_custom"
+            android:layout_below="@+id/btn_translate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_animation"
+            android:layout_gravity="left|top"
+            android:src="@drawable/sample_0" />
+    </FrameLayout>
+
+</RelativeLayout>
